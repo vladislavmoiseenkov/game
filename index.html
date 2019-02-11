@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game</title>
+    <link rel="stylesheet" href="./libs/bootstrap.min.css">
+    <link rel="stylesheet" href="./app.css">
+</head>
+<body>
+    <div class="control">
+        <input type="text" id="interval" placeholder="Interval" value="2000" />
+        <button id="start" type="button">Start</button>
+    </div>
+    <div id="game">
+
+    </div>
+    <div class="stats">
+        <div>
+            Comp: <span id="comp">0</span>
+        </div>
+        <div>
+            User: <span id="user">0</span>
+        </div>
+    </div>
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">Game Over!</h4>
+                </div>
+                <div class="modal-body" id="modalBody">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./libs/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+<script src="./libs/bootstrap.min.js"></script>
+<script src="./app.js"></script>
+</html>
